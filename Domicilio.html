@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="language" content="spanish">
+    <meta name="keywords" content="paraiso marino, mar, cocteles, bebidas, comida marina, bucaramanga, 
+    comida familiar, platos marinos">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Omar Ibañez">
+    <title>
+        Paraiso Marino | Pide tu domicilio
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/styleDomicilio.css" />
+
+
+
+</head>
+
+<header>
+    <nav class=" navbar  navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand "> <img src="./Images/logo.png" alt=""></a>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">Productos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="MasPedidos.html">Los más vendidos</a>
+                        <a class="dropdown-item" href="LoNuevo.html">Platos nuevos</a>
+                        <a class="dropdown-item" href="PlatosCaribe.html">Nuestros platos caribeños</a>
+                        <a class="dropdown-item" href="PlatosExoticos.html">Nuestros platos exóticos</a>
+                        <a class="dropdown-item" href="PlatosExtranjeros.html">Nuestros platos extranjeros</a>
+                        <a class="dropdown-item" href="Postres.html">Nuestros postres</a>
+                        <a class="dropdown-item" href="Cocteles.html">Nuestros cócteles</a>
+                        <a class="dropdown-item" href="PromocionesSemana.html">Promociones de la semana</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Domicilio.html">Domicilio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="NuestroSitio.html">Establecimiento</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="About_us.html">Nosotros</a>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+
+            </form>
+        </div>
+    </nav>
+
+</header>
+
+
+<body>
+
+
+
+    <div class="jumbotron">
+
+        <h1 id="pacificalet">¡Pide tu domicilio aquí!</h1>
+        <h6 id="pacificalet">Garantízamos la entrega de nuestro producto en el menor tiempo posible...</h6>
+
+    </div>
+
+
+    <div id="contenedorForm">
+
+
+        <div class="form-group row">
+            <label for="pedido" class="col-sm-2 col-form-label">Tipo de pedido</label>
+            <div class="col-sm-6">
+                <select name="Tipopedido" class="custom-select">
+                    <option selected>Seleccionar</option>
+                    <option value="bebida">Margarita</option>
+                    <option value="bebida">Martini seco</option>
+                    <option value="bebida">Tequila sunrise</option>
+                    <option value="bebida">Whisk-cola</option>
+                    <option value="bebida">Jugo natural</option>
+                    <option value="bebida">Arroz con Camarones</option>
+                    <option value="bebida">Cazuela de Mariscos Colombiana</option>
+                    <option value="comida">Camarones a la Criolla</option>
+                    <option value="comida">Pescado Aborrajado</option>
+                    <option value="comida">Plato del día</option>
+
+
+
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="cantidadPed" class="col-sm-2 col-form-label">Cantidad de pedido</label>
+            <div class="col-sm-6">
+                <select name="Cantidad" class="custom-select">
+                    <option selected>Seleccionar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="Más">Más</option>
+
+
+
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label for="Dirección" class="col-sm-2 col-form-label">Dirección</label>
+            <div class="col-sm-6">
+                <input type="telefono" class="form-control" id="inputTel" placeholder="Dirección">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#miModal">Pedir</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="justify-content-between align-items-center">
+            <div class="modal-dialog" id="modal-mio" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="headermodalbg">
+
+                        <div class="col-sm-12">
+                            <button type="button" class="close" id="closebutton" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title myModalLabel" id="wordmodal">Tu pedido ha sido registrado</h4>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-body" id="modalbg">
+                        <div>
+                            <h6 class="modal-mio" id="myModalLabel">Registra tus datos, para estar en contacto mientras
+                                entregamos tu pedido</h6>
+                            <hr size="10">
+                        </div>
+                        <div id="contenedorForm">
+                            <div class="form-group row" id="marginBottomform">
+                                <div class="col-sm-4">
+                                    <label for="Dirección" class="col-sm-2 col-form-label">Nombres</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="telefono" class="form-control" id="inputTel" placeholder="Nombres">
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div id="contenedorForm">
+                            <div class="form-group row" id="marginBottomform">
+                                <div class="col-sm-4">
+                                    <label for="Dirección" class="col-sm-2 col-form-label">Telefono</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="telefono" class="form-control" id="inputTel" placeholder="Telefono">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="contenedorForm">
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <label for="cantidadPed" class="col-sm-2 col-form-label">Pago</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select name="Cantidad" class="custom-select">
+                                        <option selected>Seleccionar</option>
+                                        <option value="1">Tarjeta de crédito</option>
+                                        <option value="2">Tarjeta débito</option>
+                                        <option value="3">Efectivo</option>
+                                        <option value="4">Otro</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row" id="dialogButton">
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" id="buttonEnviar" data-dismiss="modal" >Enviar</button>
+                            </div>
+                            <div class="col-sm-4">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p><a>Paraiso Marino</a>
+
+                            <p class="h6">&copy Todos los derechos reservados.<a class="text-green ml-2" href="" target="_blank"></a></p>
+                    </div>
+
+                </div>
+            </div>
+    </footer>
+</body>
+
+
+
+
+
+</html>
